@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --themeColor: #409EFF;
+  --secondaryColor: #606266;
+  --errorColor: #f56c6c;
+}
+
+body {
+  font: 14px/1.5 '微软雅黑';
+  user-select: none;
+  background-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  min-width: 1200px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+button,
+input {
+  outline: none;
+  border-width: 0;
+  background-color: transparent;
+  line-height: 1;
+  cursor: pointer;
+}
+
+/* 滚动条整体部分,必须要设置 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+}
+
+/* 滚动条的滑块按钮 */
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+/* 淡入 */
+.fade-in-enter,
+.fade-in-leave-to {
+  opacity: 0;
+}
+
+.fade-in-enter-active,
+.fade-in-leave-active {
+  transition: opacity .3s !important;
+}
+
+/* 切入 */
+.cut-in-enter,
+.cut-in-leave-to {
+  transform: translateX(480px);
+}
+
+.cut-in-enter-active,
+.cut-in-leave-active {
+  transition: transform .3s !important;
+}
+
+/* 伪链接 */
+.app-forge-link {
+  color: #409EFF !important;
+  cursor: pointer;
+  font-size: 12px !important;
+  transition: transform .3s;
+}
+
+.app-forge-link:hover {
+  text-decoration: underline;
+}
+
+.app-forge-link + .app-forge-link {
+  margin-left: 10px;
+}
