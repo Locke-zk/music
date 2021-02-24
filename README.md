@@ -1,4 +1,4 @@
-# pc
+# Music
 
 ## Project setup
 ```
