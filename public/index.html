@@ -9,7 +9,9 @@
     <link rel="preload" href="http://qq.file.lockezk.cn/img/player-bgi.jpg" as="image">
     <link rel="icon" href="data:;base64,=">
     <script>
-      window.location.href = /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ? "http://qq.mobile.lockezk.cn" :  "http://qq.lockezk.cn"
+      if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+        window.location.href = "http://qq.mobile.lockezk.cn"
+      }
     </script>
     <title>Music</title>
   </head>
